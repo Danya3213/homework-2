@@ -1,15 +1,11 @@
-import Greeting from './Greeting';
-import Message from './Message';
-import Button from './Button';
+import Recipe from './Recipe';
+import recipies from './recipies.json';
+import './App.css';
 
 export default function App () {
 
   return (
 
-    <>
-      <Greeting name = 'Ivan' />
-      <Message text = 'blah blah blah'/>
-      <Button onClick = {() => console.log('button clicked')}></Button>
-    </>
+      <Recipe recipies = {recipies}></Recipe>
   )
 }
